@@ -1,23 +1,50 @@
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(regress.in.UserSpec, org.scalatest.tools.Framework$$anon$1@430afa0b, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(petstore.acceptancetests.publicapi.pet.PetsSpec, org.scalatest.tools.Framework$$anon$1@38c03aec, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(petstore.UserSpec, org.scalatest.tools.Framework$$anon$1@38c03aec, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(petstore.acceptancetests.publicapi.pet.StoreSpec, org.scalatest.tools.Framework$$anon$1@38c03aec, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mPetsSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mPetstore Public APIs v0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  GET pet/{id}[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  - should return 200 and return pet by ID *** FAILED *** (2 seconds, 504 milliseconds)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    {"category":{"id":0,"name":"cat"},"id":9,"name":"Zipontiy","photoUrls":["string"],"status":"sold","tags":[{"id":0,"name":"string"}]} was not equal to {"category":{"id":9,"name":"string"},"id":9,"name":"sweety","photoUrls":["string"],"status":"available","tags":[{"id":0,"name":"string"}]} (PetsSpec.scala:52)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should return 404 NotFound if id not valid (656 milliseconds)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  POST pet/{id}[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should return 200 and return the created (666 milliseconds)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mUserSpec:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mregres.in public APIs[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mpetstore.swagger.io public APIs[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m  GET /users[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m  - should return list of users at given page in JSON format (2 seconds, 285 milliseconds)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m  - should return status code 200 when successful (218 milliseconds)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m  - should 6 users per page (1 second, 97 milliseconds)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m  - should allow everything in CORS (156 milliseconds)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m  - should have name and surname of the given user (165 milliseconds)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m  - should get 404 for not present userid (127 milliseconds)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m  POST /users[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m  - should create user successfully and send 200 (228 milliseconds)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m  PUT /users[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m  - should update user successfully (129 milliseconds)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m  DELETE /users[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m  - should delete user successfully (146 milliseconds)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 8 seconds, 144 milliseconds.[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 9[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 1, aborted 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 9, failed 0, canceled 0, ignored 0, pending 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mStoreSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mPetstore Public APIs v0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  GET /store/inventory[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should return 200 and return the inventory (2 seconds, 457 milliseconds)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mPetstore Public APIs v0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  POST /store/order[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should return 200 and place the order (1 second, 846 milliseconds)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mPetstore Public APIs v0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  GET /store/order/{orderid}[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  - should return purchase order and return 200 *** FAILED *** (696 milliseconds)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    java.lang.AssertionError: 1 expectation failed.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mExpected status code <200> but was <404>.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should return 404 if no id valid (641 milliseconds)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should return 405 if no id provide at all (661 milliseconds)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 7 seconds, 658 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 8[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 3, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 6, failed 2, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m*** 2 TESTS FAILED ***[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	regress.in.UserSpec[0m
+[0m[[0m[0mdebug[0m] [0m[0m	petstore.UserSpec[0m
+[0m[[0m[31merror[0m] [0m[0mFailed tests:[0m
+[0m[[0m[31merror[0m] [0m[0m	petstore.acceptancetests.publicapi.pet.PetsSpec[0m
+[0m[[0m[31merror[0m] [0m[0m	petstore.acceptancetests.publicapi.pet.StoreSpec[0m
+[0m[[0m[31merror[0m] [0m[0m(Test / [31mtest[0m) sbt.TestsFailedException: Tests unsuccessful[0m
